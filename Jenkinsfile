@@ -8,8 +8,8 @@ pipeline {
 		CPIOAuthHost = "${env.CPI_OAUTH_HOST_int-cust-demo-store-24sj2az7}"
 		CPIOAuthCredentials = "cicd_api"	
 		GITRepositoryURL  = "${env.GIT_REPOSITORY_URL_SOAP_API}"
-		GITCredentials = "Git_CRED"
-		GITBranch = "${env.GIT_BRANCH_NAME}"
+		GITCredentials = "Git_CRED_SOAP_API"
+		GITBranch = "${env.GIT_BRANCH_NAME_SOAP_AP}"
 		GITFolder = "IntegrationArtefacts"
 		GITComment = "Integration Artefacts update from CICD pipeline"
 
