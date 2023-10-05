@@ -15,8 +15,6 @@ pipeline {
 
 
    	}
-
-    
 	
 	stages {
 		stage('download integration artefact and store it in Git') {
