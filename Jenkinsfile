@@ -3,23 +3,18 @@ pipeline {
 
 	//Configure the following environment variables before executing the Jenkins Job	
 	environment {
-		IntegrationFlowID = "ConsumeEventsFromS4HANACloudwitoutslack"
-		CPIHost = "${env.CPI_HOST_DEV}"
-		CPIOAuthHost = "${env.CPI_OAUTH_HOST_DEV}"
-		CPIOAuthCredentials = "dev_api_key_up"	
-		GITRepositoryURL  = "${env.GIT_REPOSITORY_URL}"
+		IntegrationFlowID = "SOAP_API"
+		CPIHost = "${env.CPI_HOST_int-cust-demo-store-24sj2az7}"
+		CPIOAuthHost = "${env.CPI_OAUTH_HOST_int-cust-demo-store-24sj2az7}"
+		CPIOAuthCredentials = "cicd_api"	
+		GITRepositoryURL  = "${env.GIT_REPOSITORY_URL_SOAP_API}"
 		GITCredentials = "Git_CRED"
 		GITBranch = "${env.GIT_BRANCH_NAME}"
 		GITFolder = "IntegrationArtefacts"
 		GITComment = "Integration Artefacts update from CICD pipeline"
+
+
    	}
-
-
-
-
-
-
-
 
     
 	
